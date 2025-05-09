@@ -42,7 +42,10 @@
   .div1 {
     grid-area: div1;
     background: hsl(263, 55%, 52%);
-    background-image: url("data:image/svg+xml,%3Csvg ... %3C/svg%3E"); /* use a quote SVG bg if desired */
+     background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right 100px;
+  background-size: 100px; /* use a quote SVG bg if desired */
   }
 
   .div2 {
@@ -131,6 +134,9 @@
         flex-direction: column;
         padding: 1rem;
       }
+       .div1 {
+    background-image: none;
+  }
      }
 </style>
 
